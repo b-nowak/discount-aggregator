@@ -1,0 +1,101 @@
+.deal-page-wrap {
+  @media (max-width: 992px) {
+    padding-top: 100px;
+  }
+  .deal {
+    .caption {
+      color: #333;
+      text-align: center;
+      padding: 10px 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: column;
+      .circle {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border: 1px solid $black;
+        top: -20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.share {
+          background-color: $blue;
+          transition: 0.2s background linear;
+          left: 15px;
+          span {
+            background: url(../images/share-2.svg) 43% 50% no-repeat;
+            background-size: 22px 22px;
+            width: 30px;
+            height: 30px;
+          }
+        }
+        &.claim {
+          background-color: #009FE3;
+          transition: 0.2s background linear;
+          width: 200px;
+          @media (max-width: 480px) {
+            width: 150px;
+          }
+          height: 50px;
+          color: $black;
+          background: $green;
+          border-radius: 25px;
+          top: -25px;
+          span {
+            background-size: 22px 22px;
+            width: auto;
+            font-family: Cabin;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .full-deal {
+    padding-top: 155px;
+    @media (max-width: 992px) {
+      padding-top: 10px;
+    }
+    .thumbnail {
+      border: none;
+      box-shadow: none !important;
+      .img-container {
+        height: 500px;
+        @media (max-width: 480px) {
+          height: 300px;
+        }
+        background-image: url('http://lorempixel.com/800/600');
+      }
+      .logo-container {
+        width: 100%;
+        height: 100px;
+        background-image: url(https://www.logodesignlove.com/images/wordmarks/subway-logo-02.jpg);
+        border-top: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+        background-origin: content-box;
+      }
+      .caption {
+        margin: 0;
+        padding: 30px 0 10px;
+        h3 {
+          font-size: 32px;
+          @media (max-width: 992px) {
+            font-size: 28px;
+          }
+          padding: 15px 0 0;
+        }
+        p {
+          text-align: justify;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

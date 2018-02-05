@@ -1,0 +1,122 @@
+.burger-menu {
+    /*this is the nav*/
+    background: #fff;
+    text-align: center;
+    width: 300px;
+    @media (max-width: 480px) {
+        width: 250px;
+    }
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    .user {
+        .profile-header-container {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .profile-header-img {
+            padding: 20px;
+        }
+        .profile-header-img>img.img-circle {
+            width: 120px;
+            height: 120px;
+            border: 2px solid $pink;
+        }
+        .profile-header {
+            margin-top: 43px;
+        }
+        /**
+ * Ranking component
+ */
+        .rank-label-container {
+            margin-top: -19px;
+            /* z-index: 1000; */
+            text-align: center;
+        }
+        .label.label-default.rank-label {
+            background-color: $pink;
+            padding: 5px 10px 5px 10px;
+            border-radius: 27px;
+        }
+    }
+    h3 {
+        color: $black;
+        font-size: 24PX;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 0 20px;
+    }
+    .links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 0 25%;
+        width: 50%;
+        li {
+            margin-top: 10px;
+            a {
+                position: relative;
+                display: block;
+                /* drops the nav vertically*/
+                color: #000;
+                font-size: 1.3em;
+                font-weight: 400;
+                text-decoration: none;
+                padding: 5px;
+                font-family: Cabin;
+                /* &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: -5px;
+                    width: 0;
+                    height: 4px;
+                    background-color: #f1f1f1;
+                    -webkit-transition: width 0.3s ease;
+                    -moz-transition: width 0.3s ease;
+                    transition: width 0.3s ease;
+                }
+                &:hover:after {
+                    width: 70%;
+                }
+                &:active {
+                    color: #dbdbdb;
+                } */
+            }
+        }
+    }
+}
+
+.burger-menu-left {
+    left: -300px;
+    @media (max-width: 480px) {
+        left: -250px;
+    }
+    &.burger-menu-open {
+        left: 0;
+    }
+}
+
+.burger-menu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.push-toright {
+    left: 300px;
+    @media (max-width: 480px) {
+        left: 250px;
+    }
+}
+
+.smtb,
+.burger-menu,
+.burger-menu-push,
+.opacity-wrap,
+header {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}

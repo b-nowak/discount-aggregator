@@ -1,0 +1,45 @@
+$white: #fff;
+$grey: #cacbcc;
+$black: #000;
+$pink: #D6007B;
+$blue: #009FE3;
+$green: #8DD350;
+$red: rgb(221, 75, 58);
+@import url('https://fonts.googleapis.com/css?family=Cabin:500|Lato:300');
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin', sans-serif;
+}
+
+a {
+    color: $pink;
+    transition: 0.3s all;
+    &:hover {
+        opacity: 0.8;
+        text-decoration: none;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+img {
+    border-radius: 4px;
+}
+
+@import "_elements";
+@import "_burger-menu";
+@import "_scaffolding";
+@import "_forms";
+@import "views/_homepage";
+@import "views/_deal-page";
